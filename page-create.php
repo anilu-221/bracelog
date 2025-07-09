@@ -12,7 +12,7 @@ get_header();
 ?>
 <div class="container py-5">
 	<div class="row justify-content-center">
-		<div class="col-lg-5">
+		<div class="col-lg-12">
 			<div class="card shadow bg-body-tertiary py-5">
 				<div class="card-body d-flex flex-column justify-content-center align-items-center">
 					<!--Upload-->

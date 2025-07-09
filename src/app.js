@@ -2,7 +2,7 @@
  *  Modules 
  * 
  * */
-
+import 'bootstrap';
 import BracelogUploader from './modules/bracelogUploader.js';
 
 document.addEventListener('DOMContentLoaded', () => {
