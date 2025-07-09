@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class="footer">
+<div class="footer bg-body-tertiary">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">

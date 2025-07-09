@@ -25,4 +25,4 @@ defined( 'ABSPATH' ) || exit;
 		<?php get_template_part( '/template-parts/header', 'main' ); ?>
 	</header>
 
-	<main id="content" class="site-content bg-body-tertiary">
+	<main id="bracelog-content" class="site-content bg-body-tertiary">

@@ -37,7 +37,7 @@
 					<a class="nav-link" href="#"><?php echo esc_html__( 'About', 'bracelog' ); ?></a>
 				</li>
 				<li class="nav-item ms-3">
-					<a class="btn btn-lg btn-primary" href="#"><?php echo esc_html__( 'Create Timeline', 'bracelog' ); ?></a>
+					<a class="btn btn-lg btn-primary" href="/create"><?php echo esc_html__( 'Create Timeline', 'bracelog' ); ?></a>
 				</li>
 			</ul>
 		</div>
