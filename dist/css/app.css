@@ -12025,3 +12025,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border: 2px solid #2b2e30 !important;
   border-radius: 5px !important;
 }
+
+#camera-wrapper {
+  position: relative;
+}
+
+#overlay-image {
+  max-width: 100%;
+}
+
+.card-img-top {
+  aspect-ratio: 1 !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}

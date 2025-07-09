@@ -22,14 +22,14 @@ get_header();
 						<small class="text-muted">Up to 10 images, each under 2MB.</small>
 					</div>
 					<!-- Camera -->
-					<div id="camera-wrapper border shadow" class="mb-3">
-						<video id="camera-stream" autoplay playsinline class="w-100 mb-2" style="max-height: 300px;"></video>
-						<img id="overlay-image" style="position: absolute; top: 0; left: 0; opacity: 0.5; max-height: 300px; display: none;" />
-						<button class="btn btn-sm btn-outline-primary" id="take-photo"><?php echo esc_html__( 'Take Photo', 'bracelog' ); ?></button>
+					<div id="camera-wrapper">
+						<video id="camera-stream" autoplay playsinline></video>
+						<img id="overlay-image" style="position:absolute; top:0; left:0; opacity:0.5; display:none;">
+						<button id="take-photo" class="btn btn-primary mt-2">Take Photo</button>
 					</div>
 
 					<!-- Thumbnails -->
-					<div id="image-preview" class="row row-cols-2 row-cols-md-4 g-3 sortable-preview"></div>
+					<div id="image-preview" class="row row-cols-2 row-cols-md-6 g-3 sortable-preview"></div>
 				</div>
 			</div>
 		</div>

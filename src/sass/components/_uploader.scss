@@ -1,0 +1,12 @@
+#camera-wrapper {
+	position: relative;
+}
+
+#overlay-image{
+	max-width: 100%;
+}
+
+.card-img-top{
+	aspect-ratio: 1 !important;
+	object-fit: cover !important;
+}
