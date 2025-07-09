@@ -1,6 +1,6 @@
 //Typography
 $font-size-base: 1rem;
-$h1-font-size: $font-size-base * 4.5;
+$h1-font-size: $font-size-base * 3.5;
 $h2-font-size: $font-size-base * 2.5;
 $h3-font-size: $font-size-base * 2;
 $h4-font-size: $font-size-base * 1.5;
@@ -12,11 +12,8 @@ $border-radius: .75rem;
 
 $white: #FFFFFF;
 $black: #111111;
-$neutral-gray: #F0F5F7;
-$dark-teal: #123543;
-$gray-green: #4B6D5E;
-$pale-green: #CDF29D;
-$bright-green: #AFE306;
+$primary: #ffcf34;
+$dark: #2b2e30;
 $seafoam: #BBEDD7;
 $aqua: #04D8E5;
 $blue: #66ADFF;
@@ -34,4 +31,17 @@ $light:#EEEEEE ;
 --bs-blue: #66ADFF;
 --bs-dark: #123543;
 --bs-light-rgb: 243, 243, 243;
+}
+
+
+.btn {
+	border-radius: 2rem !important;
+	border: 2px solid $dark !important;
+	font-weight: 600 !important;
+	color: $dark !important;
+}
+
+.btn:hover {
+	background-color: $dark !important;
+	color: $white !important;
 }

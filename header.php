@@ -22,13 +22,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_body_open(); ?>
 
 	<header id="site-header" class="site-header" role="banner">
-		<div class="container">
-			<?php
-			if ( has_custom_logo() ) {
-				the_custom_logo();
-			}
-			?>
-		</div>
+		<?php get_template_part( '/template-parts/header', 'main' ); ?>
 	</header>
 
-	<main id="content" class="site-content">
+	<main id="content" class="site-content bg-body-tertiary">

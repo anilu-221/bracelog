@@ -18,7 +18,8 @@ define( 'BRACELOG_THEME_DIR', get_template_directory_uri() );
 define( 'BRACELOG_THEME_SLUG', 'bracelog' );
 
 
-/**Theme functions */
+/**Load required files */
+require_once 'inc/class-bracelog-scripts.php';
 
 
 

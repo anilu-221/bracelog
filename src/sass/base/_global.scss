@@ -1,0 +1,16 @@
+//Typography.
+html, body{
+	font-family: 'Poppins', sans-serif;
+	color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 600;
+}
+
+// Logo.
+.custom-logo-link{
+	width: 17rem;
+	height: auto;
+	max-width: 70%;
+}
