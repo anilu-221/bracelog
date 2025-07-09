@@ -1,0 +1,28 @@
+{
+  "name": "bracelog",
+  "version": "1.0.0",
+  "description": "bracelog custom theme",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilu-221/bracelog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anilu-221/bracelog/issues"
+  },
+  "homepage": "https://github.com/anilu-221/bracelog#readme",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.7",
+    "laravel-mix": "^6.0.49",
+    "sass": "^1.89.2",
+    "sass-loader": "^12.1.0"
+  }
+}
