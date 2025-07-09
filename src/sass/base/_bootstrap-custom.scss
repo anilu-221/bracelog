@@ -13,7 +13,7 @@ $border-radius: .75rem;
 $white: #FFFFFF;
 $black: #111111;
 $primary: #ffcf34;
-$dark: #2b2e30;
+$dark: #1d2429;
 $seafoam: #BBEDD7;
 $aqua: #04D8E5;
 $blue: #66ADFF;
@@ -36,12 +36,17 @@ $light:#EEEEEE ;
 
 .btn {
 	border-radius: 2rem !important;
-	border: 2px solid $dark !important;
-	font-weight: 600 !important;
-	color: $dark !important;
 }
 
-.btn:hover {
-	background-color: $dark !important;
-	color: $white !important;
+.btn-outline-light:hover {
+	border-color: $primary !important;
+	background-color: $primary !important;
+}
+
+.btn-outline-light.btn-nav{
+	color: rgba(255, 255, 255, 0.75);
+}
+.btn-nav{
+	font-size: 1.2rem !important;
+	padding: .45rem 1.2rem !important;
 }

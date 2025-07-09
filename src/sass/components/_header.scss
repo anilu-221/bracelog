@@ -1,14 +1,34 @@
 .nav-link{
-	font-size: 1.25rem;
-	font-weight: 600;
-	color: $dark !important;
-	padding-right: 1.5rem !important;
-	padding-left: 1.5rem !important;
+	font-size: 1.2rem;
 }
 
 .navbar-toggler{
-	background-color: $primary !important;
 	color: $dark !important;
-	border: 2px solid $dark !important;
 	border-radius: 5px !important;
+}
+
+.navbar-toggler:focus{
+	box-shadow: rgb(43, 46, 48) 0px 0px 0px 1px !important;
+}
+
+.navbar-collapse{
+	@include media-breakpoint-down(md) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.navbar-collapse .nav-link{
+	@include media-breakpoint-down(md) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+}
+
+.navbar-collapse .btn{
+	@include media-breakpoint-down(md) {
+		margin-top: 1rem;
+		width: 100%;
+	}
 }

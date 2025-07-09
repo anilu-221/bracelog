@@ -29,8 +29,12 @@ export default class BracelogUploader {
 		try {
 			const stream = await navigator.mediaDevices.getUserMedia({ video: true });
 			this.video.srcObject = stream;
+			this.video.play();
+
+			this.takePhotoBtn.addEventListener('click', () => this.capturePhoto());
 		} catch (err) {
-			console.error('Camera access denied:', err);
+			console.error('Camera error:', err);
+			alert('Camera access failed. Please allow camera permissions.');
 		}
 	}
 

@@ -6,8 +6,8 @@
  */
 
 ?>
-<nav class="navbar navbar-expand-md bg-body-tertiary">
-	<div class="container">
+<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+	<div class="container py-2">
 		<!--Logo-->
 		<?php
 		if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
@@ -31,13 +31,13 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="ms-auto navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo esc_html__( 'FAQ', 'bracelog' ); ?></a>
+					<a class="nav-link mx-md-2" href="#"><?php echo esc_html__( 'FAQ', 'bracelog' ); ?></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo esc_html__( 'About', 'bracelog' ); ?></a>
+					<a class="nav-link mx-md-2" href="#"><?php echo esc_html__( 'About', 'bracelog' ); ?></a>
 				</li>
-				<li class="nav-item ms-3">
-					<a class="btn btn-lg btn-primary" href="/create"><?php echo esc_html__( 'Create Timeline', 'bracelog' ); ?></a>
+				<li class="nav-item ms-md-3">
+					<a class="btn btn-nav btn-outline-light" href="/create"><?php echo esc_html__( 'Create Timeline', 'bracelog' ); ?></a>
 				</li>
 			</ul>
 		</div>

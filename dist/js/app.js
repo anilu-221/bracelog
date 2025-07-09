@@ -10920,6 +10920,7 @@ var BracelogUploader = /*#__PURE__*/function () {
     key: "initCamera",
     value: function () {
       var _initCamera = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+        var _this = this;
         var stream, _t;
         return _regenerator().w(function (_context) {
           while (1) switch (_context.n) {
@@ -10932,12 +10933,17 @@ var BracelogUploader = /*#__PURE__*/function () {
             case 1:
               stream = _context.v;
               this.video.srcObject = stream;
+              this.video.play();
+              this.takePhotoBtn.addEventListener('click', function () {
+                return _this.capturePhoto();
+              });
               _context.n = 3;
               break;
             case 2:
               _context.p = 2;
               _t = _context.v;
-              console.error('Camera access denied:', _t);
+              console.error('Camera error:', _t);
+              alert('Camera access failed. Please allow camera permissions.');
             case 3:
               return _context.a(2);
           }
@@ -10951,32 +10957,32 @@ var BracelogUploader = /*#__PURE__*/function () {
   }, {
     key: "initSortable",
     value: function initSortable() {
-      var _this = this;
+      var _this2 = this;
       sortablejs__WEBPACK_IMPORTED_MODULE_0__["default"].create(this.preview, {
         animation: 150,
         onEnd: function onEnd() {
           var newOrder = [];
-          var items = _this.preview.querySelectorAll('img');
+          var items = _this2.preview.querySelectorAll('img');
           items.forEach(function (img) {
             return newOrder.push(img.src);
           });
-          _this.images = newOrder;
-          _this.renderImages();
+          _this2.images = newOrder;
+          _this2.renderImages();
         }
       });
     }
   }, {
     key: "handleFileUpload",
     value: function handleFileUpload(e) {
-      var _this2 = this;
+      var _this3 = this;
       var files = Array.from(e.target.files);
       files.forEach(function (file) {
         if (!file.type.startsWith('image/')) return;
-        if (file.size > _this2.maxSize) return alert("".concat(file.name, " is too large"));
-        if (_this2.images.length >= _this2.maxFiles) return alert('Maximum of 10 images allowed');
+        if (file.size > _this3.maxSize) return alert("".concat(file.name, " is too large"));
+        if (_this3.images.length >= _this3.maxFiles) return alert('Maximum of 10 images allowed');
         var reader = new FileReader();
         reader.onload = function (event) {
-          return _this2.addImage(event.target.result);
+          return _this3.addImage(event.target.result);
         };
         reader.readAsDataURL(file);
       });
@@ -11007,13 +11013,13 @@ var BracelogUploader = /*#__PURE__*/function () {
   }, {
     key: "renderImages",
     value: function renderImages() {
-      var _this3 = this;
+      var _this4 = this;
       this.preview.innerHTML = '';
       this.images.forEach(function (src, index) {
         var col = document.createElement('div');
         col.className = 'col';
         col.innerHTML = "\n\t\t\t\t<div class=\"card\">\n\t\t\t\t\t<img src=\"".concat(src, "\" class=\"card-img-top\" alt=\"Uploaded image\">\n\t\t\t\t\t<div class=\"card-footer text-center\">\n\t\t\t\t\t\t<small>Photo ").concat(index + 1, "</small>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t");
-        _this3.preview.appendChild(col);
+        _this4.preview.appendChild(col);
       });
     }
   }]);
